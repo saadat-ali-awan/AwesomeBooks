@@ -1,16 +1,54 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-    
-        
-        <script src="index.js" async defer></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Awesome Books</title>
+</head>
+<body>
+
+  <header>
+    <h1>Awesome Books</h1>
+    <nav>
+      <a href="#books" class="active">List</a>
+      <a href="#form">Add new</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="date">
+    <time datetime=""></time>
+  </div>
+
+  <section class="all-books">
+    <h2>All Awesome Books</h2>  
+    <main id="books">
+    </main>
+  </section>
+
+  <form id="form" class="hidden">
+  <h2>Add a new book</h2>
+  <input type="text" name="title" id="title-input" placeholder="Title"/>
+  <input type="text" name="author" id="author-input" placeholder="Author"/>
+  <button type="submit" id="submit-button">Add</button>
+  </form>
+
+  <section id="contact" class="hidden">
+  <h2>Contact Information</h2>
+  <p>Do you have any questions or just want to say "Hello"? <br> You can reach out to us!</p>
+  <ul>
+    <li>Our e-mail: mail@mail.com</li>
+    <li>Our phone number: 004358634422</li>
+    <li>Our addres: Streetname 22, 84503 City, Country</li>
+  </ul>
+  </section>
+
+  <footer>
+    <p>Copyright  ...</p>
+  </footer>
+  
+  <script src="index.js" async defer></script>
+</body>
 </html>
