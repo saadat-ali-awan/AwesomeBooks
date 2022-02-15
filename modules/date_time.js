@@ -11,5 +11,5 @@ export default function init() {
   changeTime();
   setInterval(() => {
     changeTime();
-  }, 10000);
+  }, 500);
 }
