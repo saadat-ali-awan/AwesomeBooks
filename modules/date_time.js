@@ -4,7 +4,7 @@ import * as domElements from './DomElements.js';
 function changeTime() {
   const now = DateTime.now();
   domElements.getTimeElement().innerHTML = `${now.toLocaleString(DateTime.DATETIME_MED_WITH_WEEKDAY)}`;
-  domElements.getTimeElement().setAttribute('datetime', now.toLocal().toFormat('yyyy-MM-DD HH:mm'));
+  domElements.getTimeElement().setAttribute('datetime', now.toLocal().toFormat('yyyy-MM-DD'));
 }
 
 export default function init() {
