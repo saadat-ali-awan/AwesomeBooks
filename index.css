@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#books {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  border: 4px solid black;
+  margin-bottom: 12px;
+}
+
+#books > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+
+#books > div:nth-child(odd) {
+  background-color: #ddd;
+}
+
+#books > div > p {
+  margin: 8px 0;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  margin: 1rem;
+}
+
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form > *:not(:nth-child(1)) {
+  margin: 0.5rem;
+  font-size: 1rem;
+  padding: 4px;
+  border: 1px solid #000;
+}
+
+form button {
+  align-self: flex-end;
+  padding: 4px 8px !important;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+form h2 {
+  margin-top: -200px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  justify-content: space-between;
+  border: 2px solid #000;
+  padding: 0 1rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+header > nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+header > nav > a {
+  text-decoration: none;
+  color: #000;
+  padding: 12px;
+}
+
+header > nav > a.active {
+  color: blue;
+}
+
+header > nav > a:nth-child(2) {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+#date {
+  align-self: flex-end;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 95vw;
+  justify-content: flex-start;
+  border: 2px solid #000;
+  padding: 0 1rem;
+}
+
+.all-books {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto !important;
+}
+
+.all-books,
+form,
+#contact {
+  overflow-y: hidden;
+  height: calc(96vh - 168px);
+}
+
+#contact {
+  padding: 5rem 0 0 0;
+  font-size: 1.2rem;
+}
+
+#contact > p:nth-child(1) {
+  margin-top: 3rem;
+}
+
+.hidden {
+  display: none;
+}
