@@ -1,4 +1,4 @@
-export default class Methods {
+export default class Library {
   constructor() {
     this.books = [];
   }

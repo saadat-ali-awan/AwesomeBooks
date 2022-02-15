@@ -1,20 +1,20 @@
-import Methods from './modules/methods.js';
+import Library from './modules/methods.js';
 import * as domElements from './modules/DomElements.js';
 import * as navigationFunctions from './modules/navigation.js';
 import * as datetime from './modules/date_time.js';
 
 window.addEventListener('load', () => {
-  const method = new Methods();
+  const library = new Library();
 
   domElements.default();
-  method.init();
+  library.init();
   datetime.default();
 
   domElements.getSubmitButton().addEventListener('click', (e) => {
     e.preventDefault();
     const author = domElements.getAuthorInput().value;
     const title = domElements.getTitleInput().value;
-    method.addBookToLocalStorage(title, author);
+    library.addBookToLocalStorage(title, author);
     domElements.getAuthorInput().value = null;
     domElements.getTitleInput().value = null;
   });

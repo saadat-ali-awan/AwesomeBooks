@@ -7,6 +7,15 @@
 
 - CSS, HTML & Javascript. 
 
+## How to run in your local machine
+
+- Copy the URL: "git@github.com:Saadat123456/AwesomeBooks.git"
+- In your terminal, go to the directory you want to clone the repository.
+- Use the command: git clone git@github.com:Saadat123456/AwesomeBooks.git
+- Open index.html file
+- Run npm install in the terminal to install node modules
+- Run Live Server
+
 
 ## Authors
 
