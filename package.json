@@ -23,5 +23,8 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
     "hint": "^6.1.9"
+  },
+  "dependencies": {
+    "luxon": "^2.3.0"
   }
 }
